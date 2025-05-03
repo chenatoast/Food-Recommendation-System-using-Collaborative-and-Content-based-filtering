@@ -97,8 +97,9 @@ def update_data(user_id, selected_dish, recommendation_rating, neighborhood_size
 
         final_adjustment = rating_adjustment + adjustment
 
-        new_rating = np.clip(current_rating + final_adjustment, 1, 5)
-        new_rating = round(new_rating, 1)
+        new_ratings = np.round(new_data[0], 1)
+        new_ratings = np.clip(new_ratings, 1, 5)
+
         # print(f"User {user_id}: Dish '{dish_names[i]}' - Previous Rating: {current_rating}, Updated Rating: {new_rating}")
         dishes.loc[user_id, dish_names[i]] = new_rating
 
@@ -182,7 +183,6 @@ def check_ingredients(dish_id, available_ingredients):
         if dish_row[ingredient_columns[j]].values[0] == 1
     )
 
-    available_ingredients_set = set(available_ingredients)
     return dish_ingredients.issubset(available_ingredients_set)
 
 
