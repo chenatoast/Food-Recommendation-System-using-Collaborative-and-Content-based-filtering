@@ -1,7 +1,3 @@
-# Smart Food Recommendation System (Meal HARMONY)
-
-![Meal HARMONY Logo](https://via.placeholder.com/150)
-
 ## Project Overview
 
 Meal HARMONY is an intelligent food recommendation system that solves the everyday dilemma of "Khane mai kya banau?" (What should I cook?). Our solution uses machine learning to provide personalized meal suggestions based on user preferences, available ingredients, meal context, and other factors.
