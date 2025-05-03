@@ -109,3 +109,5 @@ new_rating = current_rating + (0.1 * (recommendation_rating - 3)) + conditional_
 ```
 
 **Process:** Updates ratings of similar dishes based on user feedback with weighted adjustments
+
+Have a nice day :)
