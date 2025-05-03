@@ -3,7 +3,10 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.linear_model import LinearRegression
 
-#! Load data
+#! Load data: contains ratings (1-5) for 16 dishes for 38 users.
+# Shape: 38 x 17
+# First column: user IDs
+# Rest columns: ratings
 df = pd.read_csv("Food survey.csv")
 
 #! Set UserID as index and extract dish ratings
